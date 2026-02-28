@@ -1,0 +1,107 @@
+<footer class="relative mt-10 md:mt-16">
+  <div class="relative bg-white overflow-hidden">
+    <!-- Purple accent block -->
+    <div class="absolute top-0 left-0 w-full md:w-[40%] h-70 md:h-54.5 bg-[#5e3ea2]"></div>
+
+    <!-- Content -->
+    <div class="relative z-1 max-w-330 mx-auto px-5 md:px-10 lg:px-16 xl:px-20 py-10 md:py-12">
+      <div class="flex flex-col md:flex-row items-start gap-10 md:gap-16 lg:gap-20">
+        <!-- Left - Logo + description -->
+        <div class="max-w-85 shrink-0">
+          <div class="font-gill font-normal text-lg md:text-[22px] leading-12 tracking-[0.59em] uppercase text-white mb-3 md:mb-4">
+            Hoodies
+          </div>
+          <p class="font-sora font-normal text-xs leading-3.75 tracking-[0.01em] text-[#fae0e9]">
+            Hodratz are uniquely generated and collectible NFTs.
+            Each of them is one-of-a-kind and 100% owned by you.
+          </p>
+        </div>
+
+        <!-- Footer link columns -->
+        <div class="flex flex-wrap gap-10 md:flex-nowrap md:gap-16 lg:gap-20 pt-2">
+          <!-- COMPANY -->
+          <div>
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-dark mb-3 md:mb-4">
+              COMPANY
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  Roadmap
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- HOODRATZ -->
+          <div>
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-dark mb-3 md:mb-4">
+              HOODRATZ
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  Attributes
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  Merch
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- POLICIES -->
+          <div>
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-dark mb-3 md:mb-4">
+              POLICIES
+            </p>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="#" class="font-sora font-normal text-xs text-muted hover:text-dark transition-colors">
+                  Cookie policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONNECT -->
+          <div>
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-dark mb-3 md:mb-4">
+              Connect
+            </p>
+            <div class="flex gap-3">
+              <a href="#" class="transition-opacity hover:opacity-80">
+                <img src="/assets/discord-icon.png" alt="Discord" class="w-10 h-10" />
+              </a>
+              <a href="#" class="transition-opacity hover:opacity-80">
+                <img src="/assets/twitter-icon.png" alt="Twitter" class="w-10 h-10" />
+              </a>
+              <a href="#" class="transition-opacity hover:opacity-80">
+                <img src="/assets/instagram-icon.png" alt="Instagram" class="w-10 h-10" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 md:mt-16 pt-6">
+        <p class="font-sora font-normal text-xs tracking-[0.01em] text-[#b3b3b3]">
+          &copy; 2021 Hoodratz Inc. All right reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

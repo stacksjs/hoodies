@@ -1,0 +1,122 @@
+<section class="relative pt-12 md:pt-20 pb-16 md:pb-24 overflow-hidden">
+  <!-- "Proposition" watermark text -->
+  <div class="absolute top-0 left-0 w-full pointer-events-none select-none hidden lg:block">
+    <span class="font-kumbh font-bold text-[120px] xl:text-[205px] leading-none tracking-[0.01em] text-transparent bg-clip-text proposition-gradient opacity-10">
+      Proposition
+    </span>
+  </div>
+
+  <!-- Decorative dots -->
+  <div class="dots-pattern absolute top-20 right-40 w-15 h-15 opacity-30 hidden md:block"></div>
+  <div class="dots-pattern absolute bottom-30 left-20 w-15 h-15 opacity-30 hidden lg:block"></div>
+
+  <!-- Decorative ellipses -->
+  <div class="absolute top-32 left-[60%] w-3 h-3 rounded-full bg-accent/20 hidden md:block"></div>
+  <div class="absolute top-60 right-30 w-2.5 h-2.5 rounded-full bg-lavender/30 hidden lg:block"></div>
+  <div class="absolute bottom-40 left-40 w-1.5 h-1.5 rounded-full bg-accent/15 hidden lg:block"></div>
+  <div class="absolute top-80 left-[30%] w-2 h-2 rounded-full bg-lavender/20 hidden md:block"></div>
+
+  <!-- Header -->
+  <div class="relative z-1 mb-8 md:mb-10">
+    <p class="font-sora font-normal text-base tracking-[0.3em] uppercase text-accent mb-3">
+      value proposition
+    </p>
+    <h2 class="font-kumbh font-bold text-3xl md:text-[40px] lg:text-[48px] leading-[1.1] text-dark mb-4">
+      What makes them <span class="text-accent">so special?</span>
+    </h2>
+    <p class="font-sora font-normal text-base leading-6 tracking-[0.01em] text-muted max-w-130">
+      We are NFT and crypto lovers and created a collection drop that we would like to buy ourselves! Check this out:
+    </p>
+  </div>
+
+  <!-- Content area -->
+  <div class="relative z-1 flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
+    <!-- Left - Proposition cards -->
+    <div class="shrink-0 flex flex-col gap-4 md:gap-5 w-full lg:w-[630px]">
+      <!-- VARIETY - expanded -->
+      <div class="w-full text-left bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-6 md:p-10 cursor-pointer">
+        <div class="flex items-center justify-between gap-4">
+          <div class="min-w-0">
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">VARIETY</p>
+            <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Over 200 attributes</p>
+          </div>
+          <div class="shrink-0 w-9 h-9 md:w-[42px] md:h-[42px] rounded-full flex items-center justify-center bg-accent text-white">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="rotate-90">
+              <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <p class="font-sora font-normal text-base leading-7 text-muted mt-4 md:mt-6">
+          Creativity is our second name! We designed over 200 attributes for our Hoodratz so that each and every one of them would be amazing and one-of-a-kind!
+        </p>
+      </div>
+
+      <!-- RARITY - collapsed -->
+      <div class="w-full text-left bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] px-6 py-5 md:px-10 md:py-8 cursor-pointer">
+        <div class="flex items-center justify-between gap-4">
+          <div class="min-w-0">
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">RARITY</p>
+            <p class="font-sora font-normal text-lg md:text-[22px] text-dark">4 rarity levels</p>
+          </div>
+          <div class="shrink-0 w-9 h-9 md:w-[42px] md:h-[42px] rounded-full flex items-center justify-center bg-[#f4f0fb] text-muted">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- POPULARITY - collapsed -->
+      <div class="w-full text-left bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] px-6 py-5 md:px-10 md:py-8 cursor-pointer">
+        <div class="flex items-center justify-between gap-4">
+          <div class="min-w-0">
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">POPULARITY</p>
+            <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Amazing NFT community</p>
+          </div>
+          <div class="shrink-0 w-9 h-9 md:w-[42px] md:h-[42px] rounded-full flex items-center justify-center bg-[#f4f0fb] text-muted">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR MISSION - collapsed -->
+      <div class="w-full text-left bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] px-6 py-5 md:px-10 md:py-8 cursor-pointer">
+        <div class="flex items-center justify-between gap-4">
+          <div class="min-w-0">
+            <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">OUR MISSION</p>
+            <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Helping charities worldwide</p>
+          </div>
+          <div class="shrink-0 w-9 h-9 md:w-[42px] md:h-[42px] rounded-full flex items-center justify-center bg-[#f4f0fb] text-muted">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right - Illustrations -->
+    <div class="relative w-full lg:flex-1 h-[400px] md:h-[500px] lg:h-[580px] mx-auto lg:mx-0">
+      <!-- NY Cityscape background -->
+      <img
+        src="/assets/background-ny.svg"
+        alt=""
+        class="absolute bottom-0 left-0 w-full opacity-15"
+      />
+      <!-- Attributes illustration -->
+      <img
+        src="/assets/attributes-illustration.svg"
+        alt="Hoodratz attributes"
+        class="relative z-[1] w-[300px] md:w-[380px] lg:w-full lg:max-w-[714px] h-auto mx-auto mt-10"
+      />
+      <!-- Diamond icon -->
+      <img
+        src="/assets/diamond-icon.svg"
+        alt=""
+        class="absolute bottom-10 left-10 w-10 md:w-[52px] h-auto"
+      />
+    </div>
+  </div>
+</section>

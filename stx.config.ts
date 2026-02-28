@@ -4,6 +4,9 @@ const config: StxConfig = {
   // Pages directory for file-based routing
   pagesDir: 'pages',
 
+  // Partials directory (where @include resolves from)
+  partialsDir: '.',
+
   // Components directory
   componentsDir: 'components',
 

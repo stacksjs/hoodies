@@ -1,6 +1,91 @@
-<script>
-export const title = 'Welcome to STX'
-export const description = 'Build modern web apps with intuitive templating'
+<script server>
+const title = 'Hoodies'
+const tailwindCdn = '<scr' + 'ipt src="https://cdn.tailwindcss.com"></scr' + 'ipt>'
+const tailwindConfig = `<scr` + `ipt>
+window.tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        syne: ['Syne', 'sans-serif'],
+        gill: ['Gill Sans', 'Gill Sans MT', 'Calibri', 'sans-serif'],
+        sora: ['Sora', 'sans-serif'],
+        kumbh: ['Kumbh Sans', 'sans-serif'],
+      },
+      colors: {
+        'page-bg': '#f4f0fb',
+        'dark': '#1E2321',
+        'muted': '#6b6b7b',
+        'accent': '#7b61ff',
+        'lavender': '#c4b5fd',
+      },
+      spacing: {
+        '1.25': '0.3125rem',
+        '1.75': '0.4375rem',
+        '2.25': '0.5625rem',
+        '7.5': '1.875rem',
+        '13': '3.25rem',
+        '15': '3.75rem',
+        '17.5': '4.375rem',
+        '25': '6.25rem',
+        '27.5': '6.875rem',
+        '30': '7.5rem',
+        '35': '8.75rem',
+        '45': '11.25rem',
+        '54': '13.5rem',
+        '54.5': '13.625rem',
+        '55': '13.75rem',
+        '65.5': '16.375rem',
+        '70': '17.5rem',
+        '85': '21.25rem',
+        '87': '21.75rem',
+        '95': '23.75rem',
+        '100': '25rem',
+        '105': '26.25rem',
+        '120': '30rem',
+        '125': '31.25rem',
+        '130': '32.5rem',
+        '164': '41rem',
+        '172': '43rem',
+        '175': '43.75rem',
+        '178': '44.5rem',
+        '203': '50.75rem',
+        '212': '53rem',
+        '330': '82.5rem',
+        '442.5': '110.625rem',
+      },
+      maxWidth: {
+        '85': '21.25rem',
+        '87': '21.75rem',
+        '95': '23.75rem',
+        '100': '25rem',
+        '105': '26.25rem',
+        '120': '30rem',
+        '130': '32.5rem',
+        '164': '41rem',
+        '203': '50.75rem',
+        '330': '82.5rem',
+        '442.5': '110.625rem',
+      },
+      minHeight: {
+        '80': '20rem',
+        '105': '26.25rem',
+        '130': '32.5rem',
+      },
+      lineHeight: {
+        '3.75': '0.9375rem',
+        '5.5': '1.375rem',
+        '11': '2.75rem',
+        '12': '3rem',
+      },
+      zIndex: {
+        '1': '1',
+        '2': '2',
+        '3': '3',
+      },
+    },
+  },
+}
+</scr` + `ipt>`
 </script>
 
 <!DOCTYPE html>
@@ -8,87 +93,114 @@ export const description = 'Build modern web apps with intuitive templating'
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/dist/app.css">
+  <title>{{ title }} - Hoodratz NFT Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Sora:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {!! tailwindCdn !!}
+  {!! tailwindConfig !!}
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
+      font-family: 'Sora', sans-serif;
+      background-color: #f4f0fb;
+      color: #1E2321;
+      margin: 0;
+      padding: 0;
     }
-    .container { text-align: center; padding: 2rem; }
-    h1 { font-size: 3rem; margin-bottom: 1rem; }
-    p { font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; }
-    .counter { margin: 2rem 0; }
-    .counter button {
-      padding: 0.5rem 1.5rem;
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      border: 2px solid white;
-      background: transparent;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .counter button:hover { background: white; color: #764ba2; }
-    .counter span { font-size: 2rem; margin: 0 1rem; }
-    .links { display: flex; gap: 1rem; justify-content: center; }
+
     a {
-      color: white;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border: 2px solid white;
-      border-radius: 8px;
-      transition: all 0.2s;
     }
-    a:hover { background: white; color: #764ba2; }
+
+    .meet-glow {
+      color: #e8a0d4;
+      text-shadow:
+        0 0 12px rgba(232, 160, 212, 0.7),
+        0 0 30px rgba(232, 160, 212, 0.4),
+        0 0 60px rgba(200, 120, 200, 0.2);
+    }
+
+    .hero-title-neon {
+      -webkit-text-stroke: 2px rgba(255, 255, 255, 0.9);
+      text-shadow:
+        0 0 20px rgba(168, 130, 255, 0.6),
+        0 0 40px rgba(168, 130, 255, 0.3),
+        0 0 80px rgba(168, 130, 255, 0.15);
+    }
+
+    .dots-pattern {
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 1.5px, transparent 1.5px);
+      background-size: 12px 12px;
+    }
+
+    .proposition-gradient {
+      background-image: linear-gradient(
+        135deg,
+        rgba(250, 237, 243, 0.4) 0%,
+        rgba(214, 217, 245, 0.4) 38%,
+        rgba(213, 209, 235, 0.4) 72%,
+        rgba(229, 229, 241, 0.4) 100%
+      );
+    }
+
+    .about-ellipse {
+      background: linear-gradient(
+        135deg,
+        rgba(250, 237, 243, 0.4) 0%,
+        rgba(214, 217, 245, 0.4) 38%,
+        rgba(213, 209, 235, 0.4) 72%,
+        rgba(229, 229, 241, 0.4) 100%
+      );
+      box-shadow: 4px 20px 66px rgba(244, 239, 236, 1);
+    }
   </style>
-  <!-- Load stores synchronously -->
-  <script>
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/js/stores.js', false);
-    xhr.send();
-    if (xhr.status === 200) eval(xhr.responseText);
-  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
+  <div class="relative min-h-screen bg-page-bg overflow-x-hidden">
+    <div class="max-w-330 mx-auto px-5 md:px-10 lg:px-16 xl:px-20">
+      <!-- Navigation -->
+      <nav class="flex items-center justify-between py-6">
+        <div class="font-gill font-normal text-base md:text-[22px] leading-11 tracking-[0.59em] uppercase text-dark">
+          Hoodies
+        </div>
+        <ul class="hidden md:flex list-none gap-6 lg:gap-10">
+          <li>
+            <a href="#" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-dark relative transition-colors duration-200">
+              Home
+              <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-dark">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-dark">
+              Roadmap
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-dark">
+              Merch
+            </a>
+          </li>
+        </ul>
 
-    <!-- Counter demo using stores -->
-    <div class="counter">
-      <button id="decrement">-</button>
-      <span id="count">0</span>
-      <button id="increment">+</button>
-    </div>
+        <!-- Mobile menu button -->
+        <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+        </button>
+      </nav>
 
-    <div class="links">
-      <a href="https://stx.sh" target="_blank">Documentation</a>
-      <a href="https://github.com/stacksjs/stx" target="_blank">GitHub</a>
+      @include('components/Hero')
+      @include('components/AboutUs')
+      @include('components/Proposition')
+      @include('components/FutureNFT')
     </div>
+    @include('components/Footer')
   </div>
-
-  <script>
-    (function() {
-      var stores = window.AppStores;
-      var appStore = stores.appStore;
-      var appActions = stores.appActions;
-
-      // Subscribe to store changes
-      appStore.subscribe(function(state) {
-        document.getElementById('count').textContent = state.count;
-      });
-
-      // Button handlers
-      document.getElementById('increment').onclick = appActions.increment;
-      document.getElementById('decrement').onclick = appActions.decrement;
-    })();
-  </script>
 </body>
 </html>
