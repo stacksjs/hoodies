@@ -28,7 +28,7 @@
   <div class="relative z-2 flex items-center justify-between w-full px-6 py-10 md:px-12 md:py-15 lg:px-17.5 gap-10">
     <!-- Left side -->
     <div class="flex-1 max-w-full lg:max-w-130">
-      <p class="meet-glow font-syne font-normal text-2xl md:text-4xl lg:text-[44px] leading-[100%] tracking-[0.01em] mb-1">
+      <p class="font-syne font-normal text-2xl md:text-4xl lg:text-[44px] leading-[100%] tracking-[0.01em] mb-1" style="color: #e8a0d4; text-shadow: 0 0 12px rgba(232,160,212,0.7), 0 0 30px rgba(232,160,212,0.4), 0 0 60px rgba(200,120,200,0.2)">
         Meet
       </p>
       <img

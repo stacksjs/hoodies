@@ -8,7 +8,9 @@
     "build:stores": "bun run lib/build.ts",
     "preview": "bun run --bun stx preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cwcss/crosswind": "^0.1.6"
+  },
   "devDependencies": {
     "@stacksjs/stx": "latest",
     "bun-plugin-stx": "latest",

@@ -1,0 +1,66 @@
+<style>
+  .dots-pattern {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 1.5px, transparent 1.5px);
+    background-size: 12px 12px;
+  }
+
+  .proposition-gradient {
+    background-image: linear-gradient(135deg, rgba(250, 237, 243, 0.4) 0%, rgba(214, 217, 245, 0.4) 38%, rgba(213, 209, 235, 0.4) 72%, rgba(229, 229, 241, 0.4) 100%);
+  }
+
+  .about-ellipse {
+    background: linear-gradient(135deg, rgba(250, 237, 243, 0.4) 0%, rgba(214, 217, 245, 0.4) 38%, rgba(213, 209, 235, 0.4) 72%, rgba(229, 229, 241, 0.4) 100%);
+    box-shadow: 4px 20px 66px rgba(244, 239, 236, 1);
+  }
+
+  /* Crosswind bug fixes: opacity outputs integer instead of decimal */
+  .opacity-15 { opacity: 0.15 !important; }
+
+  /* Crosswind bug fixes: custom leading-* outputs unitless number instead of rem */
+  .leading-11 { line-height: 2.75rem !important; }
+  .leading-5\.5 { line-height: 1.375rem !important; }
+  .leading-12 { line-height: 3rem !important; }
+  .leading-3\.75 { line-height: 0.9375rem !important; }
+
+  /* Crosswind bug fixes: text-[#hex] outputs font-size instead of color */
+  .text-\[\#fae0e9\] { color: #fae0e9 !important; }
+  .text-\[\#b3b3b3\] { color: #b3b3b3 !important; }
+
+  /* Crosswind bug fix: drop-shadow doesn't convert underscores to spaces */
+  .drop-shadow-\[0_4px_20px_rgba\(123\,97\,255\,0\.3\)\] {
+    filter: drop-shadow(0 4px 20px rgba(123,97,255,0.3)) !important;
+  }
+
+  /* Missing: fraction-based positioning */
+  .left-1\/2 { left: 50%; }
+  .top-1\/2 { top: 50%; }
+
+  /* Missing: negative translate transforms */
+  .-translate-x-1\/2 { transform: translateX(-50%); }
+  .-translate-y-1\/2 { transform: translateY(-50%); }
+  .-translate-y-\[45\%\] { transform: translateY(-45%); }
+
+  /* Missing: arbitrary box-shadow */
+  .shadow-\[0_4px_40px_rgba\(0\,0\,0\,0\.06\)\] { box-shadow: 0 4px 40px rgba(0,0,0,0.06); }
+
+  /* Missing: color opacity modifiers */
+  .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+  .text-white\/90 { color: rgba(255, 255, 255, 0.9); }
+  .bg-white\/15 { background-color: rgba(255, 255, 255, 0.15); }
+  .bg-white\/25 { background-color: rgba(255, 255, 255, 0.25); }
+  .bg-white\/10 { background-color: rgba(255, 255, 255, 0.1); }
+  .border-white\/50 { border-color: rgba(255, 255, 255, 0.5); }
+  .border-white\/40 { border-color: rgba(255, 255, 255, 0.4); }
+  .border-white\/60 { border-color: rgba(255, 255, 255, 0.6); }
+  .bg-accent\/20 { background-color: rgba(123, 97, 255, 0.2); }
+  .bg-accent\/15 { background-color: rgba(123, 97, 255, 0.15); }
+  .bg-accent\/8 { background-color: rgba(123, 97, 255, 0.08); }
+  .bg-lavender\/30 { background-color: rgba(196, 181, 253, 0.3); }
+  .bg-lavender\/20 { background-color: rgba(196, 181, 253, 0.2); }
+  .bg-lavender\/25 { background-color: rgba(196, 181, 253, 0.25); }
+
+  /* Missing: hover variants for opacity modifiers */
+  .hover\:bg-white\/25:hover { background-color: rgba(255, 255, 255, 0.25); }
+  .hover\:bg-white\/10:hover { background-color: rgba(255, 255, 255, 0.1); }
+  .hover\:border-white\/60:hover { border-color: rgba(255, 255, 255, 0.6); }
+</style>
