@@ -1,0 +1,17 @@
+{
+  "name": "hoodies-ui",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run build:stores && bun run --bun stx dev",
+    "build": "bun run build:stores && bun run --bun stx build",
+    "build:stores": "bun run lib/build.ts",
+    "preview": "bun run --bun stx preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stacksjs/stx": "latest",
+    "bun-plugin-stx": "latest",
+    "typescript": "^5.0.0"
+  }
+}
