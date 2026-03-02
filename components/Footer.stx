@@ -18,7 +18,7 @@
         </div>
 
         <!-- Right - Link columns + Connect/Social -->
-        <div class="flex flex-wrap gap-x-12 gap-y-8 md:gap-x-16 lg:flex-nowrap lg:gap-x-20 xl:gap-x-24">
+        <div class="flex flex-wrap gap-x-6 gap-y-8 md:gap-x-12 lg:flex-nowrap lg:gap-x-16 xl:gap-x-20">
           <!-- COMPANY -->
           <div>
             <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-3 md:mb-5">
@@ -82,14 +82,14 @@
               Connect
             </p>
             <div class="flex gap-4">
-              <a href="#" class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
-                <img src="/assets/discord-icon.png" alt="Discord" class="w-6 h-6" />
+              <a href="#" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
+                <img src="/assets/discord-icon.png" alt="Discord" class="w-12 h-12" />
               </a>
-              <a href="#" class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
-                <img src="/assets/twitter-icon.png" alt="Twitter" class="w-6 h-6" />
+              <a href="#" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
+                <img src="/assets/twitter-icon.png" alt="Twitter" class="w-12 h-12" />
               </a>
-              <a href="#" class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
-                <img src="/assets/instagram-icon.png" alt="Instagram" class="w-6 h-6" />
+              <a href="#" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-colors hover:border-accent hover:bg-accent/5">
+                <img src="/assets/instagram-icon.png" alt="Instagram" class="w-12 h-12" />
               </a>
             </div>
           </div>
