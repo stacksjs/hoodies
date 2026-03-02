@@ -1,0 +1,77 @@
+<nav x-data="{ menuOpen: false, path: window.location.pathname.endsWith('/') && window.location.pathname.length > 1 ? window.location.pathname.slice(0, -1) : (window.location.pathname || '/') }" class="relative py-6">
+  <div class="flex items-center justify-between">
+    <a href="/" class="font-gill font-normal text-base md:text-[22px] leading-11 tracking-[0.59em] uppercase text-dark no-underline">
+      Hoodies
+    </a>
+    <ul class="hidden md:flex list-none gap-6 lg:gap-10">
+      <li>
+        <a href="/" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/' ? 'color: #1E2321' : 'color: #6b6b7b'">
+          Home
+          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/' ? '' : 'display: none'"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/about" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/about' ? 'color: #1E2321' : 'color: #6b6b7b'">
+          About
+          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/about' ? '' : 'display: none'"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/roadmap" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/roadmap' ? 'color: #1E2321' : 'color: #6b6b7b'">
+          Roadmap
+          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/roadmap' ? '' : 'display: none'"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/merch" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/merch' ? 'color: #1E2321' : 'color: #6b6b7b'">
+          Merch
+          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/merch' ? '' : 'display: none'"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile menu button -->
+    <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu" @click="menuOpen = !menuOpen">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 12h18M3 6h18M3 18h18" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-page-bg px-5 pt-6 pb-6 transition-all duration-300" :style="menuOpen ? 'opacity: 1; visibility: visible; transform: translateY(0)' : 'opacity: 0; visibility: hidden; transform: translateY(-10px)'">
+    <!-- Header with logo + close button -->
+    <div class="flex items-center justify-between mb-8">
+      <a href="/" class="font-gill font-normal text-base leading-11 tracking-[0.59em] uppercase text-dark no-underline">
+        Hoodies
+      </a>
+      <button type="button" class="p-2 text-dark" aria-label="Close menu" @click="menuOpen = false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 6l12 12M6 18L18 6" />
+        </svg>
+      </button>
+    </div>
+    <ul class="flex flex-col gap-5 list-none">
+      <li>
+        <a href="/" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/about" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/about' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/roadmap" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/roadmap' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+          Roadmap
+        </a>
+      </li>
+      <li>
+        <a href="/merch" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/merch' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+          Merch
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
