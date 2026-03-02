@@ -40,8 +40,8 @@
             <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">VARIETY</p>
             <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Over 200 attributes</p>
           </div>
-          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-colors duration-200" :class="{ 'bg-accent': active === 0, 'text-white': active === 0, 'bg-[#f4f0fb]': active !== 0, 'text-muted': active !== 0 }">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="transition-transform duration-200" :class="{ 'rotate-90': active === 0 }">
+          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-all duration-200" :class="{ 'bg-accent': active === 0, 'text-white': active === 0, 'bg-[#f4f0fb]': active !== 0, 'text-muted': active !== 0 }" :style="active === 0 ? 'transform: rotate(-90deg)' : ''">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
@@ -60,8 +60,8 @@
             <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">RARITY</p>
             <p class="font-sora font-normal text-lg md:text-[22px] text-dark">4 rarity levels</p>
           </div>
-          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-colors duration-200" :class="{ 'bg-accent': active === 1, 'text-white': active === 1, 'bg-[#f4f0fb]': active !== 1, 'text-muted': active !== 1 }">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="transition-transform duration-200" :class="{ 'rotate-90': active === 1 }">
+          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-all duration-200" :class="{ 'bg-accent': active === 1, 'text-white': active === 1, 'bg-[#f4f0fb]': active !== 1, 'text-muted': active !== 1 }" :style="active === 1 ? 'transform: rotate(-90deg)' : ''">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
@@ -80,8 +80,8 @@
             <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">POPULARITY</p>
             <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Amazing NFT community</p>
           </div>
-          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-colors duration-200" :class="{ 'bg-accent': active === 2, 'text-white': active === 2, 'bg-[#f4f0fb]': active !== 2, 'text-muted': active !== 2 }">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="transition-transform duration-200" :class="{ 'rotate-90': active === 2 }">
+          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-all duration-200" :class="{ 'bg-accent': active === 2, 'text-white': active === 2, 'bg-[#f4f0fb]': active !== 2, 'text-muted': active !== 2 }" :style="active === 2 ? 'transform: rotate(-90deg)' : ''">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
@@ -100,8 +100,8 @@
             <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">OUR MISSION</p>
             <p class="font-sora font-normal text-lg md:text-[22px] text-dark">Helping charities worldwide</p>
           </div>
-          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-colors duration-200" :class="{ 'bg-accent': active === 3, 'text-white': active === 3, 'bg-[#f4f0fb]': active !== 3, 'text-muted': active !== 3 }">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="transition-transform duration-200" :class="{ 'rotate-90': active === 3 }">
+          <div class="shrink-0 w-9 h-9 md:w-10.5 md:h-10.5 rounded-full flex items-center justify-center transition-all duration-200" :class="{ 'bg-accent': active === 3, 'text-white': active === 3, 'bg-[#f4f0fb]': active !== 3, 'text-muted': active !== 3 }" :style="active === 3 ? 'transform: rotate(-90deg)' : ''">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
