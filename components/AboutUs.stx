@@ -42,8 +42,8 @@
           class="w-full h-auto block"
         />
         <!-- Bottom info bar overlay (HTML text replacing SVG text) -->
-        <div class="absolute bottom-0 left-0 right-0 bg-white px-6 py-5 md:px-8 md:py-6 flex items-center gap-3 md:gap-4" style="height: 22.2%">
-          <div class="w-9 h-9 md:w-10 md:h-10 bg-[#d5d1eb] rounded-full flex items-center justify-center shrink-0">
+        <div class="absolute bottom-0 left-0 right-0 bg-white px-6 py-7 md:px-8 md:py-8 flex items-center gap-3 md:gap-4">
+          <div class="w-10 h-10 bg-[#d5d1eb] rounded-full flex items-center justify-center shrink-0">
             <svg class="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="none" stroke="#6847AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
             </svg>
@@ -60,12 +60,12 @@
     <div class="flex flex-col gap-8 lg:gap-12 w-full lg:flex-1 min-w-0">
       <!-- Top row: Rarity + Cone -->
       <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center md:items-end">
-        <div class="w-full md:flex-1 lg:max-w-120 bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 md:p-12 flex flex-col justify-between gap-6 shrink-0">
+        <div class="w-full md:flex-1 lg:max-w-120 bg-white rounded-3xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 md:p-12 flex flex-col justify-between gap-6 shrink-0">
           <div class="w-full flex items-start gap-6">
             <img
               src="/assets/nft-transfer.png"
               alt="NFT"
-              class="w-24 md:w-35 h-auto"
+              class="w-24 md:w-44 h-auto"
             />
             <div class="text-right ml-auto">
               <p class="font-sora font-normal text-sm tracking-[0.2em] uppercase text-muted mb-1">Rarity</p>
@@ -87,10 +87,10 @@
 
       <!-- Bottom row: Amount + Backgrounds -->
       <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center md:items-start lg:-ml-15">
-        <div class="w-full md:flex-1 lg:max-w-100 bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 flex flex-col justify-between gap-6 shrink-0">
+        <div class="w-full md:flex-1 lg:max-w-100 bg-white rounded-3xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 md:p-12 flex flex-col justify-between gap-6 shrink-0">
           <div class="flex items-start justify-between">
-            <div class="w-13 h-13 bg-[#f7f5fb] rounded-xl flex items-center justify-center">
-              <img src="/assets/gift.svg" alt="Gift" class="w-7 h-7" />
+            <div class="w-24 h-24 bg-[#f7f5fb] rounded-3xl flex items-center justify-center">
+              <img src="/assets/gift.svg" alt="Gift" class="w-9 h-9" />
             </div>
             <div class="text-right font-normal">
               <p class="font-sora text-sm tracking-[0.2em] uppercase text-muted mb-1">Amount</p>
@@ -108,7 +108,7 @@
         <img
           src="/assets/backgrounds.png"
           alt="Backgrounds - 23"
-          class="w-full max-w-87 h-auto rounded-2xl"
+          class="w-full max-w-87 h-auto rounded-3xl"
         />
       </div>
     </div>
