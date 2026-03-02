@@ -31,20 +31,35 @@
   </div>
 
   <!-- Cards layout -->
-  <div class="relative z-1 flex flex-col lg:flex-row gap-5 items-start">
-    <!-- Left - Hoodrat character card -->
-    <div class="shrink-0 mx-auto lg:mx-0">
-      <img
-        src="/assets/hoodrat-2.svg"
-        alt="Josephine, the town rat"
-        class="w-full max-w-[320px] md:max-w-95 lg:max-w-105 h-auto"
-      />
+  <div class="relative z-1 flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-35 items-start">
+    <!-- Left - Hoodrat character card (offset down ~92px to match Figma) -->
+    <div class="shrink-0 mx-auto lg:mx-0 lg:mt-23 w-full max-w-80 md:max-w-95 lg:max-w-105">
+      <div class="relative rounded-3xl overflow-hidden border border-[#f1efff] shadow-lg">
+        <!-- Full SVG as illustration background -->
+        <img
+          src="/assets/hoodrat-2.svg"
+          alt="Hoodrat character"
+          class="w-full h-auto block"
+        />
+        <!-- Bottom info bar overlay (HTML text replacing SVG text) -->
+        <div class="absolute bottom-0 left-0 right-0 bg-white px-6 py-5 md:px-8 md:py-6 flex items-center gap-3 md:gap-4" style="height: 22.2%">
+          <div class="w-9 h-9 md:w-10 md:h-10 bg-[#d5d1eb] rounded-full flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="none" stroke="#6847AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-sora font-normal text-xs md:text-sm text-[#b3b3b3] leading-tight">Hoodrat #234</p>
+            <p class="font-sora font-normal text-sm md:text-lg lg:text-xl text-dark leading-tight">Josephine, the town rat</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Right - 2x2 layout -->
-    <div class="flex flex-col gap-5 w-full lg:flex-1 min-w-0">
+    <div class="flex flex-col gap-8 lg:gap-12 w-full lg:flex-1 min-w-0">
       <!-- Top row: Rarity + Cone -->
-      <div class="flex flex-col md:flex-row gap-5 items-center md:items-end">
+      <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center md:items-end">
         <div class="w-full md:flex-1 lg:max-w-120 bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 md:p-12 flex flex-col justify-between gap-6 shrink-0">
           <div class="w-full flex items-start gap-6">
             <img
@@ -71,7 +86,7 @@
       </div>
 
       <!-- Bottom row: Amount + Backgrounds -->
-      <div class="flex flex-col md:flex-row gap-5 items-center md:items-start">
+      <div class="flex flex-col md:flex-row gap-5 lg:gap-8 items-center md:items-start lg:-ml-15">
         <div class="w-full md:flex-1 lg:max-w-100 bg-white rounded-2xl shadow-[0_4px_40px_rgba(0,0,0,0.06)] p-8 flex flex-col justify-between gap-6 shrink-0">
           <div class="flex items-start justify-between">
             <div class="w-13 h-13 bg-[#f7f5fb] rounded-xl flex items-center justify-center">
