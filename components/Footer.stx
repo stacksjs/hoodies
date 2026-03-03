@@ -24,14 +24,14 @@
           </p>
           <ul class="space-y-2.5">
             <li>
-              <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+              <StxLink to="/about" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                 About
-              </a>
+              </StxLink>
             </li>
             <li>
-              <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+              <StxLink to="/roadmap" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                 Roadmap
-              </a>
+              </StxLink>
             </li>
           </ul>
         </div>
@@ -48,9 +48,9 @@
               </a>
             </li>
             <li>
-              <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+              <StxLink to="/merch" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                 Merch
-              </a>
+              </StxLink>
             </li>
           </ul>
         </div>
@@ -123,14 +123,14 @@
             </p>
             <ul class="space-y-2.5">
               <li>
-                <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+                <StxLink to="/about" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                   About
-                </a>
+                </StxLink>
               </li>
               <li>
-                <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+                <StxLink to="/roadmap" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                   Roadmap
-                </a>
+                </StxLink>
               </li>
             </ul>
           </div>
@@ -147,9 +147,9 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
+                <StxLink to="/merch" className="font-sora font-normal text-xs text-dark hover:text-accent transition-colors">
                   Merch
-                </a>
+                </StxLink>
               </li>
             </ul>
           </div>

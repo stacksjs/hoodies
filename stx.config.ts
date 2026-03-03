@@ -10,6 +10,12 @@ const config: StxConfig = {
   // Components directory
   componentsDir: 'components',
 
+  // Layouts directory
+  layoutsDir: 'pages',
+
+  // Default layout (convention-based auto-layout)
+  defaultLayout: '_layout',
+
   // Public assets directory
   publicDir: 'public',
 

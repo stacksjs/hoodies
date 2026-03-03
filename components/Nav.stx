@@ -1,32 +1,32 @@
-<nav x-data="{ menuOpen: false, path: window.location.pathname.endsWith('/') && window.location.pathname.length > 1 ? window.location.pathname.slice(0, -1) : (window.location.pathname || '/') }" class="relative py-6">
+<nav x-data="{ menuOpen: false }" class="relative z-10 py-6">
   <div class="flex items-center justify-between">
     <a href="/" class="font-gill font-normal text-base md:text-[22px] leading-11 tracking-[0.59em] uppercase text-dark no-underline">
       Hoodies
     </a>
     <ul class="hidden md:flex list-none gap-6 lg:gap-10">
       <li>
-        <a href="/" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/' ? 'color: #1E2321' : 'color: #6b6b7b'">
+        <StxLink to="/" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-accent cursor-pointer stx-nav-link">
           Home
-          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/' ? '' : 'display: none'"></span>
-        </a>
+          <span class="stx-nav-dot block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1"></span>
+        </StxLink>
       </li>
       <li>
-        <a href="/about" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/about' ? 'color: #1E2321' : 'color: #6b6b7b'">
+        <StxLink to="/about" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-accent cursor-pointer stx-nav-link">
           About
-          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/about' ? '' : 'display: none'"></span>
-        </a>
+          <span class="stx-nav-dot block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1"></span>
+        </StxLink>
       </li>
       <li>
-        <a href="/roadmap" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/roadmap' ? 'color: #1E2321' : 'color: #6b6b7b'">
+        <StxLink to="/roadmap" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-accent cursor-pointer stx-nav-link">
           Roadmap
-          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/roadmap' ? '' : 'display: none'"></span>
-        </a>
+          <span class="stx-nav-dot block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1"></span>
+        </StxLink>
       </li>
       <li>
-        <a href="/merch" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] relative transition-colors duration-200 hover:text-accent cursor-pointer" :style="path === '/merch' ? 'color: #1E2321' : 'color: #6b6b7b'">
+        <StxLink to="/merch" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted relative transition-colors duration-200 hover:text-accent cursor-pointer stx-nav-link">
           Merch
-          <span class="block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1" :style="path === '/merch' ? '' : 'display: none'"></span>
-        </a>
+          <span class="stx-nav-dot block w-1.25 h-1.25 bg-accent rounded-full mx-auto mt-1"></span>
+        </StxLink>
       </li>
     </ul>
 
@@ -39,7 +39,7 @@
   </div>
 
   <!-- Mobile menu panel -->
-  <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-page-bg px-5 pt-6 pb-6 transition-all duration-300" :style="menuOpen ? 'opacity: 1; visibility: visible; transform: translateY(0)' : 'opacity: 0; visibility: hidden; transform: translateY(-10px)'">
+  <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-page-bg px-5 pt-6 pb-6 transition-all duration-300" style="opacity: 0; visibility: hidden; transform: translateY(-10px)" :style="menuOpen ? 'opacity: 1; visibility: visible; transform: translateY(0)' : 'opacity: 0; visibility: hidden; transform: translateY(-10px)'">
     <!-- Header with logo + close button -->
     <div class="flex items-center justify-between mb-8">
       <a href="/" class="font-gill font-normal text-base leading-11 tracking-[0.59em] uppercase text-dark no-underline">
@@ -53,25 +53,35 @@
     </div>
     <ul class="flex flex-col gap-5 list-none">
       <li>
-        <a href="/" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+        <a href="/" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Home
         </a>
       </li>
       <li>
-        <a href="/about" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/about' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+        <a href="/about" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           About
         </a>
       </li>
       <li>
-        <a href="/roadmap" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/roadmap' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+        <a href="/roadmap" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Roadmap
         </a>
       </li>
       <li>
-        <a href="/merch" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] transition-colors duration-200 hover:text-accent" :style="path === '/merch' ? 'color: #1E2321' : 'color: #6b6b7b'" @click="menuOpen = false">
+        <a href="/merch" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Merch
         </a>
       </li>
     </ul>
   </div>
 </nav>
+
+<style>
+  /* Hide the active dot by default, show only on exact-active links */
+  .stx-nav-dot {
+    display: none;
+  }
+  .exact-active .stx-nav-dot {
+    display: block;
+  }
+</style>

@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoodies - Hoodies NFT Collection</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Sora:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-  @include('components/Styles')
-</head>
-<body class="font-sora bg-page-bg text-dark">
-  <div class="relative min-h-screen bg-page-bg overflow-x-hidden">
-    <div class="max-w-330 mx-auto px-5 lg:px-4">
-      @include('components/Nav')
+@layout('_layout')
 
-      @include('components/Hero')
-      @include('components/AboutUs')
-      @include('components/Proposition')
-      @include('components/FutureNFT')
-    </div>
-    @include('components/Footer')
-  </div>
-</body>
-</html>
+@section('content')
+  @include('components/Hero')
+  @include('components/AboutUs')
+  @include('components/Proposition')
+  @include('components/FutureNFT')
+@endsection
