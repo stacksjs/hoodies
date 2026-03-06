@@ -6,7 +6,12 @@
     "dev": "bun run build:stores && bun run --bun stx dev",
     "build": "bun run build:stores && bun run --bun stx build",
     "build:stores": "bun run lib/build.ts",
-    "preview": "bun run --bun stx preview"
+    "preview": "bun run --bun stx preview",
+    "lint": "bunx --bun pickier .",
+    "lint:fix": "bunx --bun pickier . --fix",
+    "format": "bunx --bun pickier . --format",
+    "format:fix": "bunx --bun pickier . --format --write",
+    "postinstall": "bunx git-hooks"
   },
   "dependencies": {
     "@cwcss/crosswind": "^0.1.6"
@@ -14,6 +19,15 @@
   "devDependencies": {
     "@stacksjs/stx": "latest",
     "bun-plugin-stx": "latest",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "bun-git-hooks": "^0.3.1"
+  },
+  "git-hooks": {
+    "pre-commit": {
+      "staged-lint": {
+        "*.{js,ts,json,yaml,yml,md}": "bunx --bun pickier lint --fix"
+      }
+    },
+    "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
   }
 }
