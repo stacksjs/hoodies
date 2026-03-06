@@ -4,6 +4,7 @@ node_modules/
 # Build output
 dist/
 .stx/
+public/js/stores.js
 
 # Environment
 .env
