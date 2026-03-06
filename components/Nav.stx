@@ -1,4 +1,8 @@
-<nav x-data="{ menuOpen: false }" class="relative z-10 py-6">
+<script>
+  const menuOpen = state(false)
+</script>
+
+<nav class="relative z-10 py-6">
   <div class="flex items-center justify-between">
     <a href="/" class="font-gill font-normal text-base md:text-[22px] leading-11 tracking-[0.59em] uppercase text-dark no-underline">
       Hoodies
@@ -31,7 +35,7 @@
     </ul>
 
     <!-- Mobile menu button -->
-    <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu" @click="menuOpen = !menuOpen">
+    <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu" @click="!menuOpen">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M3 12h18M3 6h18M3 18h18" />
       </svg>
@@ -39,7 +43,7 @@
   </div>
 
   <!-- Mobile menu panel -->
-  <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-page-bg px-5 pt-6 pb-6 transition-all duration-300" style="opacity: 0; visibility: hidden; transform: translateY(-10px)" :style="menuOpen ? 'opacity: 1; visibility: visible; transform: translateY(0)' : 'opacity: 0; visibility: hidden; transform: translateY(-10px)'">
+  <div class="md:hidden fixed top-0 left-0 right-0 z-50 bg-page-bg px-5 pt-6 pb-6 transition-all duration-300" style="opacity: 0; visibility: hidden; transform: translateY(-10px)" :style="menuOpen() ? 'opacity: 1; visibility: visible; transform: translateY(0)' : 'opacity: 0; visibility: hidden; transform: translateY(-10px)'">
     <!-- Header with logo + close button -->
     <div class="flex items-center justify-between mb-8">
       <a href="/" class="font-gill font-normal text-base leading-11 tracking-[0.59em] uppercase text-dark no-underline">
@@ -53,24 +57,24 @@
     </div>
     <ul class="flex flex-col gap-5 list-none">
       <li>
-        <a href="/" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Home
-        </a>
+        </StxLink>
       </li>
       <li>
-        <a href="/about" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/about" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           About
-        </a>
+        </StxLink>
       </li>
       <li>
-        <a href="/roadmap" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/roadmap" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Roadmap
-        </a>
+        </StxLink>
       </li>
       <li>
-        <a href="/merch" data-stx-link data-stx-active-class="text-dark" data-stx-exact-active-class="text-dark" class="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/merch" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
           Merch
-        </a>
+        </StxLink>
       </li>
     </ul>
   </div>
