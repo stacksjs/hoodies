@@ -35,7 +35,7 @@
     </ul>
 
     <!-- Mobile menu button -->
-    <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu" @click="!menuOpen">
+    <button type="button" class="md:hidden p-2 text-dark" aria-label="Menu" @click="menuOpen.set(!menuOpen())">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M3 12h18M3 6h18M3 18h18" />
       </svg>
@@ -49,7 +49,7 @@
       <a href="/" class="font-gill font-normal text-base leading-11 tracking-[0.59em] uppercase text-dark no-underline">
         Hoodies
       </a>
-      <button type="button" class="p-2 text-dark" aria-label="Close menu" @click="menuOpen = false">
+      <button type="button" class="p-2 text-dark" aria-label="Close menu" @click="menuOpen.set(false)">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M6 6l12 12M6 18L18 6" />
         </svg>
@@ -57,22 +57,22 @@
     </div>
     <ul class="flex flex-col gap-5 list-none">
       <li>
-        <StxLink to="/" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen.set(false)">
           Home
         </StxLink>
       </li>
       <li>
-        <StxLink to="/about" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/about" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen.set(false)">
           About
         </StxLink>
       </li>
       <li>
-        <StxLink to="/roadmap" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/roadmap" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen.set(false)">
           Roadmap
         </StxLink>
       </li>
       <li>
-        <StxLink to="/merch" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen = false">
+        <StxLink to="/merch" activeClass="text-dark" exactActiveClass="text-dark" className="font-sora font-normal text-sm leading-5.5 tracking-[0.01em] text-muted transition-colors duration-200 hover:text-accent stx-nav-link" @click="menuOpen.set(false)">
           Merch
         </StxLink>
       </li>
