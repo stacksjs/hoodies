@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "bun run build:stores && bun run --bun stx dev",
+    "dev": "bun run build:stores && /Users/jmal/projects/stacksjs/stx/bin/stx dev",
     "build": "bun run build:stores && bun run --bun stx build",
     "build:stores": "bun run lib/build.ts",
     "preview": "bun run --bun stx preview",
@@ -14,11 +14,12 @@
     "postinstall": "bunx git-hooks"
   },
   "dependencies": {
-    "@cwcss/crosswind": "^0.1.6"
+    "@cwcss/crosswind": "^0.1.6",
+    "ts-syntax-highlighter": "^0.2.1"
   },
   "devDependencies": {
-    "@stacksjs/stx": "latest",
-    "bun-plugin-stx": "latest",
+    "@stacksjs/stx": "^0.2.6",
+    "bun-plugin-stx": "^0.2.6",
     "typescript": "^5.0.0",
     "bun-git-hooks": "^0.3.1"
   },
@@ -27,7 +28,6 @@
       "staged-lint": {
         "*.{js,ts,json,yaml,yml,md}": "bunx --bun pickier lint --fix"
       }
-    },
-    "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
+    }
   }
 }

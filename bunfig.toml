@@ -1,1 +1,2 @@
-preload = ["bun-plugin-stx"]
+# preload = ["bun-plugin-stx"]
+# Not needed when using the stx binary directly (it handles template processing internally)

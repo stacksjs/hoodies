@@ -16,6 +16,11 @@
   /* Crosswind bug fixes: opacity outputs integer instead of decimal */
   .opacity-15 { opacity: 0.15 !important; }
 
+  /* About page character card shadow */
+  .about-card-shadow {
+    filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.12));
+  }
+
   /* Crosswind bug fixes: custom leading-* outputs unitless number instead of rem */
   .leading-11 { line-height: 2.75rem !important; }
   .leading-5\.5 { line-height: 1.375rem !important; }
@@ -25,6 +30,12 @@
   /* Crosswind bug fixes: text-[#hex] outputs font-size instead of color */
   .text-\[\#fae0e9\] { color: #fae0e9 !important; }
   .text-\[\#b3b3b3\] { color: #b3b3b3 !important; }
+  .text-\[\#F05B88\] { color: #F05B88 !important; }
+  .text-\[\#D5D1EB\] { color: #D5D1EB !important; }
+  .bg-\[\#FDFCFB\] { background-color: #FDFCFB !important; }
+  .bg-\[\#F05B88\] { background-color: #F05B88 !important; }
+  .bg-\[\#f0e4e8\] { background-color: #f0e4e8 !important; }
+  .bg-\[\#D5D1EB\] { background-color: #D5D1EB !important; }
 
   /* Crosswind bug fix: drop-shadow doesn't convert underscores to spaces */
   .drop-shadow-\[0_4px_20px_rgba\(123\,97\,255\,0\.3\)\] {

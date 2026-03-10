@@ -5,5 +5,6 @@ Hoodies - About
 @endsection
 
 @section('content')
-
+  @include('components/AboutStory')
+  @include('components/AboutTeam')
 @endsection
