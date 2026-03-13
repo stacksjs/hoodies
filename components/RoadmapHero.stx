@@ -1,0 +1,42 @@
+<!-- Roadmap Hero Section -->
+<section class="relative pt-24 md:pt-36 pb-16 md:pb-24 overflow-visible">
+  <!-- "Roadmap" watermark text -->
+  <div class="absolute top-16 md:top-24 right-0 pointer-events-none select-none hidden lg:block">
+    <span class="font-kumbh font-bold text-[140px] xl:text-[200px] leading-none tracking-[0.01em] text-transparent bg-clip-text proposition-gradient roadmap-watermark-opacity">
+      Roadmap
+    </span>
+  </div>
+
+  <!-- Decorative sphere (left side) -->
+  <div class="absolute bottom-[-40px] left-[5%] md:left-[10%] w-32 h-32 md:w-46 md:h-46 hidden md:block pointer-events-none">
+    <div class="w-full h-full rounded-full roadmap-sphere-large"></div>
+  </div>
+
+  <!-- Decorative sphere (right side, near diamond) -->
+  <div class="absolute top-20 right-[5%] w-8 h-8 rounded-full roadmap-sphere-small hidden lg:block pointer-events-none"></div>
+
+  <!-- Small decorative ellipses -->
+  <div class="absolute top-28 left-[42%] w-2.5 h-2.5 rounded-full about-ellipse opacity-60 hidden md:block"></div>
+  <div class="absolute top-48 right-[18%] w-2.5 h-2.5 rounded-full about-ellipse opacity-60 hidden lg:block"></div>
+
+  <!-- Diamond icon -->
+  <div class="absolute top-16 md:top-20 right-[8%] md:right-[12%] hidden lg:block pointer-events-none">
+    <img src="/assets/diamond-icon.svg" alt="" class="w-16 h-20 opacity-70" />
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-1 text-center max-w-150 mx-auto">
+    <!-- Section label -->
+    <p class="font-sora font-normal text-base tracking-[0.6em] uppercase text-accent mb-4">
+      roadmap
+    </p>
+    <!-- Heading -->
+    <h1 class="font-kumbh font-bold text-3xl md:text-[40px] lg:text-[48px] leading-[1.15] text-dark mb-4">
+      Find out what's the plan!
+    </h1>
+    <!-- Subtitle -->
+    <p class="font-sora font-normal text-base leading-7 tracking-[0.01em] text-muted max-w-120 mx-auto">
+      There's a long road ahead, but we like keeping deadlines.
+    </p>
+  </div>
+</section>

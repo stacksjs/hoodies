@@ -70,6 +70,48 @@
   .bg-lavender\/20 { background-color: rgba(196, 181, 253, 0.2); }
   .bg-lavender\/25 { background-color: rgba(196, 181, 253, 0.25); }
 
+  /* Roadmap: watermark opacity (Figma uses 0.6 on gradient fill) */
+  .roadmap-watermark-opacity { opacity: 0.6; }
+
+  /* Roadmap: large decorative sphere (purple adaptation of pink gradient blob) */
+  .roadmap-sphere-large {
+    background: radial-gradient(ellipse at 35% 25%, rgba(196, 181, 253, 0.7) 0%, rgba(155, 135, 255, 0.4) 40%, rgba(123, 97, 255, 0.15) 70%, transparent 100%);
+    filter: blur(8px);
+  }
+
+  /* Roadmap: small decorative sphere */
+  .roadmap-sphere-small {
+    background: radial-gradient(circle at 40% 30%, rgba(196, 181, 253, 0.8) 0%, rgba(123, 97, 255, 0.3) 100%);
+  }
+
+  /* Roadmap: active timeline dot (first item - purple gradient) */
+  .roadmap-dot-active {
+    background: radial-gradient(circle at 40% 30%, #b9a6ff 0%, #9b7fff 57%, #7b61ff 100%);
+  }
+
+  /* Roadmap: inactive timeline dot (light lavender fill) */
+  .roadmap-dot-inactive {
+    background-color: #ede8ff;
+  }
+
+  /* Roadmap: vertical timeline line (purple adaptation of pink stroke) */
+  .roadmap-line {
+    background-color: rgba(196, 181, 253, 0.5);
+  }
+
+  /* Roadmap: card shadow (from Figma: 6px 30px 100px 5px) */
+  .roadmap-card-shadow {
+    box-shadow: 6px 30px 100px 5px rgba(214, 209, 235, 1);
+  }
+
+  /* Roadmap: small decorative ellipses */
+  .roadmap-ellipse-muted {
+    background-color: rgba(196, 181, 253, 0.5);
+  }
+  .roadmap-ellipse-lavender {
+    background-color: #d5d1eb;
+  }
+
   /* Missing: hover variants for opacity modifiers */
   .hover\:bg-white\/25:hover { background-color: rgba(255, 255, 255, 0.25); }
   .hover\:bg-white\/10:hover { background-color: rgba(255, 255, 255, 0.1); }
