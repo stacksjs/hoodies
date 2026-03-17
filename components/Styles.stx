@@ -1,4 +1,24 @@
 <style>
+  /* Remove default browser tap/focus highlight on interactive elements */
+  a, button, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+  a:active, a:focus, a:focus-visible,
+  button:active, button:focus, button:focus-visible {
+    outline: none;
+    background-color: transparent;
+  }
+
+  /* Override stx router's pointer-events:none during navigation */
+  .stx-navigating a,
+  .stx-navigating button,
+  .stx-navigating nav,
+  .stx-navigating nav * {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+  }
+
   .dots-pattern {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 1.5px, transparent 1.5px);
     background-size: 12px 12px;
